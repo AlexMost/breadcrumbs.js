@@ -1,0 +1,28 @@
+{
+    "abstract": {
+        "api_version": 4
+    },
+
+    "deps": {
+        "breadcrumbs.coffee":[
+            "jquery.min.js"
+        ]
+    },
+
+    "plainjs": [
+    "jquery.min.js"
+    ],
+
+    "realms": {
+        "default": [
+            {
+                "name": "default",
+                "modules": [
+                "jquery.min.js",
+                "async.js",
+                "breadcrumbs.coffee"
+                ]
+            }
+        ]
+    }
+}
