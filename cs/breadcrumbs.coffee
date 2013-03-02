@@ -10,11 +10,11 @@ animation =
 			$(item).hide()
 			cb()
 
-		$(item).animate({width: "0px"}, "slow", animate_cb)
+		$(item).animate({width: "0px", opacity: 0}, animate_cb)
 
 	show: (item, cb) -> 
 		$(item).show()
-		$(item).animate({width: "100px"}, "slow", -> cb())
+		$(item).animate({width: "100px", opacity: 1}, -> cb())
 
 
 get_outer_width = (items) ->
