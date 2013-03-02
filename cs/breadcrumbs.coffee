@@ -98,9 +98,6 @@ process = ({result_width
 		[from_tail_hide_items, from_tail_show_items] = get_show_hide_items(
 			false, collapsable_items, static_items, allowed_width)
 
-		console.log from_head_hide_items, from_tail_show_items
-		console.log from_tail_hide_items, from_tail_show_items
-
 		toggle_items(from_head_hide_items, animation, "hide", () -> show_expander expander, from_head_hide_items[0])
 
 		from_head = true

@@ -1,0 +1,27 @@
+{
+    "build": {
+        "build": {
+            "app_root": "cs",
+            "build_root": "public",
+            "formula": "recipe.json"
+        }
+    },
+    "fbuild": {
+        "build": {
+            "app_root": "cs",
+            "build_root": "public",
+            "formula": "recipe.json",
+            "f": true
+        }
+    },
+    "wbuild": {
+        "build": {
+            "app_root": "cs",
+            "build_root": "public",
+            "formula": "recipe.json"
+        },
+        "watch": {
+            "src": "cs"
+        }
+    }
+}
