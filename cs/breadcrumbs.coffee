@@ -3,18 +3,20 @@ async = require 'async'
 bs_item_s = '.bs-item'
 bs_static = '.bs-static'
 
+memoize_width = (item) -> $(item).data width: $(item).outerWidth()
+read_width = (item) -> $(item).data().width
 
 animation = 
 	hide: (item, cb) -> 
 		animate_cb = ->
 			$(item).hide()
 			cb()
-
+		memoize_width item
 		$(item).animate({width: "0px", opacity: 0}, animate_cb)
 
 	show: (item, cb) -> 
 		$(item).show()
-		$(item).animate({width: "100px", opacity: 1}, -> cb())
+		$(item).animate({width: read_width(item), opacity: 1}, -> cb())
 
 
 get_outer_width = (items) ->
@@ -117,13 +119,18 @@ process = ({result_width
 								() -> from_head = false)
 			else
 				hide_from_tail_head_visible = (cb) ->
-					toggle_items from_tail_show_items, animation, "hide", () -> cb()
+					toggle_items from_head_hide_items, animation, "hide", () -> cb()
 
-				show_from_head
 
-				async.series(
+				show_from_tail_tail_visible = (cb) ->
+					toggle_items from_tail_hide_items, animation, "show", () -> 
+						show_expander expander, from_head_hide_items[0]
+						cb()
+
+				async.parallel(
 					[
 						hide_from_tail_head_visible
+						show_from_tail_tail_visible
 					]
 					() -> from_head = true)
 
