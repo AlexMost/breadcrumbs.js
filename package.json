@@ -1,6 +1,6 @@
 {
   "name": "breadcrumbs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Plugin for creating awesome breadcrumbs",
   "main": "lib-js/breadcrumbs.js",
   "directories": {
@@ -19,7 +19,8 @@
     "breadcrumbs"
   ],
   "dependencies":{
-    "async": "~0.2.6"
+    "async": "~0.2.6",
+    "jquery-browser": "*"
   },
   "author": "Alexander Mostovenko",
   "license": "BSD",
