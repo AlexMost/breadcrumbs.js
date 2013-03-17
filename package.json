@@ -1,0 +1,27 @@
+{
+  "name": "breadcrumbs",
+  "version": "0.0.0",
+  "description": "Plugin for creating awesome breadcrumbs",
+  "main": "lib-js/breadcrumbs.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlexMost/breadcrumbs.js.git"
+  },
+  "keywords": [
+    "breadcrumbs",
+    "awesome",
+    "breadcrumbs"
+  ],
+  "dependencies":{
+    "async": "~0.2.6"
+  },
+  "author": "Alexander Mostovenko",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}

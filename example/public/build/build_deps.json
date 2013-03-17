@@ -1,0 +1,29 @@
+{
+    "default": {
+        "default": [
+            {
+                "name": "async.js",
+                "deps": [],
+                "adaptor": {
+                    "type": "plain_javascript_file"
+                }
+            },
+            {
+                "name": "jquery.min.js",
+                "deps": [],
+                "adaptor": {
+                    "type": "plain_javascript_file"
+                }
+            },
+            {
+                "name": "breadcrumbs.coffee",
+                "deps": [
+                    null
+                ],
+                "adaptor": {
+                    "type": "plain_javascript_file"
+                }
+            }
+        ]
+    }
+}
