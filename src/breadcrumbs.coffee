@@ -1,6 +1,5 @@
 if require? and module? # determine wether it's commonjs module
     async = require 'async'
-    $ = require 'jquery-browser'
 
 bs_item_s = '.bs-item'
 bs_static = '.bs-static'

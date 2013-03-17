@@ -19,8 +19,7 @@
     "breadcrumbs"
   ],
   "dependencies":{
-    "async": "~0.2.6",
-    "jquery-browser": "*"
+    "async": "~0.2.6"
   },
   "author": "Alexander Mostovenko",
   "license": "BSD",
