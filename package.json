@@ -1,13 +1,13 @@
 {
   "name": "breadcrumbs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Plugin for creating awesome breadcrumbs",
   "main": "lib-js/breadcrumbs.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "scripts": {"postinstall": "cake build"}
   },
   "repository": {
     "type": "git",
