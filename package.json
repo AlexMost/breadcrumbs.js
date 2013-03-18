@@ -1,13 +1,13 @@
 {
   "name": "breadcrumbs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Plugin for creating awesome breadcrumbs",
   "main": "lib-js/breadcrumbs.js",
   "directories": {
     "example": "example"
   },
   "scripts": {
-      "scripts": {"postinstall": "cake build"}
+      "postinstall": "cake build"
   },
   "repository": {
     "type": "git",
